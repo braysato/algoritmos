@@ -87,10 +87,3 @@ Para determinar si dos números están en el mismo grupo (mismo animal):
 **Casos especiales:**
 - El número 00 pertenece al grupo 24 (último grupo, con 97, 98, 99)
 
-## Enfoque de Solución
-
-*Por definir*
-
-## Complejidad
-
-*Por definir*
