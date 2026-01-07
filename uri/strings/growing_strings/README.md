@@ -2,22 +2,22 @@
 
 ## Problema
 
-Gene and Gina have a particular kind of farm. Instead of growing animals and vegetables, as it is usually the case in regular farms, they grow strings. A string is a sequence of characters. Strings have the particularity that, as they grow, they add characters to the left and/or to the right of themselves, but they never lose characters, nor insert new characters in the middle.
+Gene y Gina tienen un tipo particular de granja. En lugar de cultivar animales y vegetales, como es usualmente el caso en granjas regulares, ellos cultivan strings. Un string es una secuencia de caracteres. Los strings tienen la particularidad de que, a medida que crecen, agregan caracteres a la izquierda y/o a la derecha de sí mismos, pero nunca pierden caracteres, ni insertan nuevos caracteres en el medio.
 
-Gene and Gina have a collection of photos of some strings at different times during their growth. The problem is that the collection is not annotated, so they forgot to which string each photo belongs to. They want to put together a wall to illustrate strings growing procedures, but they need your help to find an appropriate sequence of photos.
+Gene y Gina tienen una colección de fotos de algunos strings en diferentes momentos durante su crecimiento. El problema es que la colección no está anotada, por lo que olvidaron a qué string pertenece cada foto. Quieren armar un muro para ilustrar los procedimientos de crecimiento de strings, pero necesitan tu ayuda para encontrar una secuencia apropiada de fotos.
 
-Each photo illustrates a string. The sequence of photos must be such that if si comes immediately before si+1 in the sequence, then si+1 is a string that may have grown from si (i.e., si appears as a consecutive substring of si+1). Also, they do not want to use repeated pictures, so all strings in the sequence must be different.
+Cada foto ilustra un string. La secuencia de fotos debe ser tal que si si viene inmediatamente antes de si+1 en la secuencia, entonces si+1 es un string que pudo haber crecido de si (es decir, si aparece como un substring consecutivo de si+1). Además, no quieren usar fotos repetidas, por lo que todos los strings en la secuencia deben ser diferentes.
 
-Given a set of strings representing all available photos, your job is to calculate the size of the largest sequence they can produce following the guidelines above.
+Dado un conjunto de strings que representan todas las fotos disponibles, tu trabajo es calcular el tamaño de la secuencia más larga que pueden producir siguiendo las pautas anteriores.
 
 **Input**
-- First line: integer N (1 ≤ N ≤ 10⁴) representing the number of strings
-- Next N lines: different non-empty strings of at most 1000 lowercase letters
-- Sum of all string lengths ≤ 10⁶
-- Last test case followed by a line with 0
+- Primera línea: entero N (1 ≤ N ≤ 10⁴) representando el número de strings
+- Siguientes N líneas: strings diferentes no vacíos de como máximo 1000 letras minúsculas
+- Suma de todas las longitudes de strings ≤ 10⁶
+- Último caso de prueba seguido de una línea con 0
 
 **Output**
-For each test case print a single integer representing the size of the largest sequence of photos.
+Para cada caso de prueba imprimir un único entero representando el tamaño de la secuencia más larga de fotos.
 
 **Ejemplo:**
 ```
