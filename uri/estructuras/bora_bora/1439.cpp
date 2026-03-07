@@ -53,12 +53,10 @@ int main() {
         int dir = 1;
         int jugador = 0;
         
-        // Aplicar efecto de carta inicial si es Queen
         if (top.rango == 12) {
             dir = -dir;
         }
         
-        // Penalidad de primera carta
         int penalidad = 0;
         bool skipTurno = false;
         if (top.rango == 7) {
@@ -72,7 +70,6 @@ int main() {
         }
         
         while (true) {
-            // Aplicar penalidad pendiente
             for (int i = 0; i < penalidad && !stock.empty(); i++) {
                 manos[jugador].push_back(stock.back());
                 stock.pop_back();
@@ -85,7 +82,6 @@ int main() {
                 continue;
             }
             
-            // Buscar mejor carta para descartar
             int mejor = -1;
             for (int i = 0; i < manos[jugador].size(); i++) {
                 if (manos[jugador][i].coincide(top)) {
@@ -112,8 +108,7 @@ int main() {
                     cout << jugador + 1 << '\n';
                     break;
                 }
-                
-                // Aplicar efectos especiales
+            
                 if (top.rango == 12) {
                     dir = -dir;
                 } else if (top.rango == 7) {
