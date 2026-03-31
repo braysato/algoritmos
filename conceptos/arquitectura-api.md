@@ -6,7 +6,7 @@ Es el estilo más común. Se basa en el protocolo HTTP y es "stateless" (sin est
 
 - **Métodos:** Utiliza verbos HTTP como GET (leer), POST (crear), PUT (actualizar todo), PATCH (actualizar parte) y DELETE (eliminar).
 - **Formato:** Típicamente usa JSON.
-- **Limitación:** El cliente siempre debe iniciar la comunicación; el servidor no puede "avisar" al cliente por sí solo [07:04].
+- **Limitación:** El cliente siempre debe iniciar la comunicación; el servidor no puede "avisar" al cliente por sí solo.
 
 ## 2. WebSockets
 
