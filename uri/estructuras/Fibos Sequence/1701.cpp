@@ -83,7 +83,6 @@ int main() {
             continue;
         }
 
-        // Transition: p'=s, q'=r+s, r'=q+s, s'=p+q+r+s, S'=S+s
         Mat5 T;
         T.a[0][3] = 1;
         T.a[1][2] = 1; T.a[1][3] = 1;
