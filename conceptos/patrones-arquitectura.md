@@ -1,6 +1,6 @@
 # Patrones de Arquitectura
 
-## 1. El Monolito (¿Realmente es malo?)
+## 1. El Monolito
 
 El monolito tiene mala fama porque a menudo se convierte en una "Gran Bola de Barro" (Big Ball of Mud): código acoplado y difícil de mantener. Sin embargo, el problema suele ser la mala implementación, no el patrón en sí.
 
